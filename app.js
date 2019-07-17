@@ -38,5 +38,5 @@ app.get('/:operand/:num1/:num2', function(req, res) {
 
 
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => console.log('Port' + port + ' is listening'));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log('Port' + PORT + ' is listening'));
