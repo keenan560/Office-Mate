@@ -1,0 +1,93 @@
+
+
+
+.surveypage {
+    background-image: url(./images/tape.jpg);
+    background-repeat:  no-repeat;
+    /* background-image: center fixed; */
+    background-position: center center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    font-family: 'Inconsolata', monospace;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.homepage {
+     background-image: url(./images/office5.jpg);
+    background-repeat:  no-repeat;
+    /* background-image: center fixed; */
+    background-position: center center;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+    font-family: 'Inconsolata', monospace;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    background-color: white;
+    border: black 5px solid;
+    color: black
+}
+
+p {
+    background-color: white;
+    color: black;
+    border: solid black 5px;
+    font-size: 20px;
+   
+}
+
+
+hr {
+    height: 3px;
+    border: solid black;
+    background-color: blue;
+}
+
+select, input {
+    background-color: white !important;
+    color: black !important;
+    border: solid black 5px !important;
+    font-size: 20px !important;
+    /* margin-left: 0% !important; */
+}
+
+button {
+    background-color: white !important;
+    color: black !important;
+    border: solid black 5px !important;
+
+}
+
+button:hover {
+    background-color: yellow !important;
+    color: blue !important;
+
+}
+
+.question-headers, .questions {
+    background-image: url(./images/yellow.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+
+}
+/* 
+.tps {
+    background-image: url(./images/action.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+} */
+
+/* select {
+    background-color: palegoldenrod !important;
+} */

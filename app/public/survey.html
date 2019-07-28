@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>officeMate</title>
+</head>
+
+<body class="surveypage">
+
+    <div class="tps container mx-auto">
+        <h1 id='tps' class="h2 p-3 my-3 col-8 mx-auto bg-primary text-white text-center animated bounceInDown">Let's
+            fill out those TPS Reports</h1>
+        <br>
+
+        <h1 class="h2 p-1 col-6 mb-3 question-headers animated flipInX slow">Name (Required):</h1>
+        <input id='name'type="text" class="form-control mb-3 animated flipInX" aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg" placeholder="Michael Scott..">
+
+        <h1 class="h2 p-1 col-6 mb-3 question-headers animated flipInX slow">Link to Photo (Required):</h1>
+        <input id='link' type="text" class="form-control mb-3 animated flipInX " aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg" placeholder="http://linkedin.com/Michael_Scott_head_shot.jpg">
+        <br>
+        <h1 class="h2 text-white bg-primary mx-auto col-8 p-3 text-center animated bounceInLeft">Answer the questions
+            below</h1>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 1:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">Your mind is always buzzing with unexplored ideas and
+            plans.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="q1">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 2:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">Generally speaking, you rely more on your experience
+            than your imagination.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 3:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">You find it easy to stay relaxed and focused even when there
+            is some pressure.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 4:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">You rarely do something just out of sheer curiosity.</p>
+        <br>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 5:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">People can rarely upset you.</p>
+
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 6:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">It is often difficult for you to relate to other people’s
+            feelings.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 7:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">In a discussion, truth should be more important than people’s
+            sensitivities.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 8:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">You rarely get carried away by fantasies and ideas.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 9:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">You think that everyone’s views should be respected regardless
+            of whether they are supported by facts or not.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 10:</h1>
+        <p class="questions p-1 h3 animated flipInX slow">You feel more energetic after spending time with a group of
+            people.</p>
+        <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <br>
+
+        <button id='submit'type='Submit' class="btn btn-lg  bg-primary mx-5 animated fadeInUp slow text-white mb-5">Submit</button>
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- -->
+    <script text="text/javascript" src="../data/friends.js">
+    
+    
+    </script>
+</body>
+
+</html>
