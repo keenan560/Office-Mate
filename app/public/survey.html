@@ -195,8 +195,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- -->
-    <script text="text/javascript" src="../data/friends.js">
-    
+    <script text="text/javascript">
+        $(document).on("click", "#submit", function(event) {
+            event.preventDefault();
+            console.log("clicked");
+        })
     
     </script>
 </body>
