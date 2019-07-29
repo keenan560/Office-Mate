@@ -36,7 +36,7 @@
         <p class="questions p-1 h3 animated flipInX slow">Your mind is always buzzing with unexplored ideas and
             plans.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="q1">
+            <select class="custom-select required" id="q1">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -50,7 +50,7 @@
         <p class="questions p-1 h3 animated flipInX slow">Generally speaking, you rely more on your experience
             than your imagination.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q2">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -64,7 +64,7 @@
         <p class="questions p-1 h3 animated flipInX slow">You find it easy to stay relaxed and focused even when there
             is some pressure.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q3">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -78,7 +78,7 @@
         <p class="questions p-1 h3 animated flipInX slow">You rarely do something just out of sheer curiosity.</p>
         <br>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q4">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -92,7 +92,7 @@
         <p class="questions p-1 h3 animated flipInX slow">People can rarely upset you.</p>
 
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q5">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -107,7 +107,7 @@
         <p class="questions p-1 h3 animated flipInX slow">It is often difficult for you to relate to other people’s
             feelings.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q6">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -122,7 +122,7 @@
         <p class="questions p-1 h3 animated flipInX slow">In a discussion, truth should be more important than people’s
             sensitivities.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q7">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -136,7 +136,7 @@
         <h1 class="question-headers text-center p-1 h2 col-3 animated flipInX slow"> Question 8:</h1>
         <p class="questions p-1 h3 animated flipInX slow">You rarely get carried away by fantasies and ideas.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q8">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -151,7 +151,7 @@
         <p class="questions p-1 h3 animated flipInX slow">You think that everyone’s views should be respected regardless
             of whether they are supported by facts or not.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q9">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -166,7 +166,7 @@
         <p class="questions p-1 h3 animated flipInX slow">You feel more energetic after spending time with a group of
             people.</p>
         <div class="input-group mb-3 col-4 mx-auto animated flipInX slow">
-            <select class="custom-select" id="inputGroupSelect01">
+            <select class="custom-select required" id="q10">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly Disagree)</option>
                 <option value="2">2</option>
@@ -196,10 +196,38 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- -->
     <script text="text/javascript">
+    console.log($("select"))
         $(document).on("click", "#submit", function(event) {
             event.preventDefault();
             console.log("clicked");
+
+
+             user = {
+                 "name": $("#name").val().trim(),
+                 "photo": $("#link").val().trim(),
+                 "scores": [
+                     parseInt($("#q1").val()),
+                     parseInt($("#q2").val()),
+                     parseInt($("#q3").val()),
+                     parseInt($("#q4").val()),
+                     parseInt($("#q5").val()),
+                     parseInt($("#q6").val()),
+                     parseInt($("#q7").val()),
+                     parseInt($("#q8").val()),
+                     parseInt($("#q9").val()),
+                     parseInt($("#q10").val())
+                 ]
+             }
+             console.log(user);
+            $.post("/api/friends",function(user, status){
+                mates.push(user);
+                alert(status);
+            })
+
+       
         })
+
+        
     
     </script>
 </body>

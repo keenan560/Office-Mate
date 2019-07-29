@@ -1,4 +1,3 @@
-// import { createPublicKey } from "crypto";
 
 var mates = [
     {
@@ -227,3 +226,4 @@ var mates = [
     }
 ]
 
+module.exports = mates
