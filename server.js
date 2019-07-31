@@ -5,8 +5,8 @@ var app = express();
 
 
 
-var PORT = 3000;
-var hostName = 'localhost';
+var PORT = process.env.PORT || 3000;
+
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -18,7 +18,7 @@ require("./app/routing/htmlRoutes")(app);
 require("./app/routing/apiRoutes")(app);
 
 
-app.listen(PORT, hostName, function (err) {
+app.listen(PORT, function (err) {
     if (err) throw err;
     console.log(`Listening on Port: ${PORT} http://localhost:${PORT}`);
 })
