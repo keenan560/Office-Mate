@@ -235,8 +235,8 @@
         console.log($("select"))
         $(document).on("click", "#submit", function (event) {
             event.preventDefault();
+            console.log($("#q1").val())
             console.log("clicked");
-          
      
    
 
@@ -256,6 +256,20 @@
                     parseInt($("#q10").val())
                 ]
             }
+
+            var allchosen = true
+            user.scores.forEach(question => {
+                console.log(question)
+                if (isNaN(question)) {
+                    allchosen = false
+
+                }
+            })
+            if (!allchosen){
+                alert("ANSWER THE QUETIONS")
+                return
+            }
+
             console.log(user);
             $.post("/api/friends", user).then(function (res) {
                 console.log(res);
@@ -266,13 +280,21 @@
 
     
             })
+            home(allchosen);
 
         })
 
-        $(document).on("click", "#close", function(){
-            location.replace("home.html");
-        });
+        function home (allchosen) {
+            if (allchosen) {
+                  $(document).on("click", "#close", function () {
+                    location.replace("home.html");
+                });
+            }
+             
 
+        }
+
+     
 
 
     </script>
