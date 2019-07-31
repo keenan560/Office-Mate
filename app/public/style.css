@@ -91,3 +91,8 @@ button:hover {
 /* select {
     background-color: palegoldenrod !important;
 } */
+
+.img-thumbnail {
+    width: 200px;
+    height: 200px;
+}

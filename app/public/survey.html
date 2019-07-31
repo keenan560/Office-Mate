@@ -15,13 +15,15 @@
 
 <body class="surveypage">
 
+
+
     <div class="tps container mx-auto">
         <h1 id='tps' class="h2 p-3 my-3 col-8 mx-auto bg-primary text-white text-center animated bounceInDown">Let's
             fill out those TPS Reports</h1>
         <br>
 
         <h1 class="h2 p-1 col-6 mb-3 question-headers animated flipInX slow">Name (Required):</h1>
-        <input id='name'type="text" class="form-control mb-3 animated flipInX" aria-label="Sizing example input"
+        <input id='name' type="text" class="form-control mb-3 animated flipInX" aria-label="Sizing example input"
             aria-describedby="inputGroup-sizing-lg" placeholder="Michael Scott..">
 
         <h1 class="h2 p-1 col-6 mb-3 question-headers animated flipInX slow">Link to Photo (Required):</h1>
@@ -177,8 +179,38 @@
         </div>
         <br>
 
-        <button id='submit'type='Submit' class="btn btn-lg  bg-primary mx-5 animated fadeInUp slow text-white mb-5">Submit</button>
+        <button id='submit' type='Submit'
+            class="btn btn-lg  bg-primary mx-5 animated fadeInUp slow text-white mb-5" data-toggle="modal" data-target="#results-modal">Submit</button>
+
+
+        <!-- Modal -->
+        <div id="results-modal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+        
+                <!-- Modal content-->
+                <div class="modal-content bg-success">
+                    <div class="modal-header">
+                       
+                        <h2 class="modal-title mx-auto"><strong>Best Match</strong></h2>
+                    </div>
+                    <div class="modal-body text-center mx-auto">
+                        <h2 id="match-name" class="mx-auto"></h2>
+                        <img id="match-img" class='img-thumbnail mx-auto'src=""
+                            alt="pic">
+                    </div>
+                    <div class="modal-footer">
+                        <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+            
     </div>
+
+
+
 
 
     <!-- Bootstrap -->
@@ -196,39 +228,46 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- -->
     <script text="text/javascript">
-    console.log($("select"))
-        $(document).on("click", "#submit", function(event) {
+
+
+        console.log($("select"))
+        $(document).on("click", "#submit", function (event) {
             event.preventDefault();
             console.log("clicked");
 
 
-             user = {
-                 "name": $("#name").val().trim(),
-                 "photo": $("#link").val().trim(),
-                 "scores": [
-                     parseInt($("#q1").val()),
-                     parseInt($("#q2").val()),
-                     parseInt($("#q3").val()),
-                     parseInt($("#q4").val()),
-                     parseInt($("#q5").val()),
-                     parseInt($("#q6").val()),
-                     parseInt($("#q7").val()),
-                     parseInt($("#q8").val()),
-                     parseInt($("#q9").val()),
-                     parseInt($("#q10").val())
-                 ]
-             }
-             console.log(user);
-            $.post("/api/friends",function(user, status){
-                mates.push(user);
-                alert(status);
+            var user = {
+                "name": $("#name").val().trim(),
+                "photo": $("#link").val().trim(),
+                "scores": [
+                    parseInt($("#q1").val()),
+                    parseInt($("#q2").val()),
+                    parseInt($("#q3").val()),
+                    parseInt($("#q4").val()),
+                    parseInt($("#q5").val()),
+                    parseInt($("#q6").val()),
+                    parseInt($("#q7").val()),
+                    parseInt($("#q8").val()),
+                    parseInt($("#q9").val()),
+                    parseInt($("#q10").val())
+                ]
+            }
+            console.log(user);
+            $.post("/api/friends", user).then(function (res) {
+                console.log(res);
+                var matchName = res.name;
+                var photo = res.photo;
+                $('#match-name').text(matchName);
+                $('#match-img').attr("src",photo);
+
+                // $("#results-modal").modal("toggle");
             })
 
-       
+
         })
 
-        
-    
+
+
     </script>
 </body>
 

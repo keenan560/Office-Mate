@@ -2,7 +2,7 @@
 var mates = [
     {
         "name": "Pam Beesly",
-        "photo": "app/data/images/pam.jpeg",
+        "photo": "../images/pam.jpeg",
         "scores": [
             1,
             5,
@@ -18,7 +18,7 @@ var mates = [
     },
     {
         "name": "Angela Martin",
-        "photo": "app/data/images/angela.jpg",
+        "photo": "../images/angela.jpg",
         "scores": [
             1,
             5,
@@ -34,7 +34,7 @@ var mates = [
     },
     {
         "name": "Toby Flenderson",
-        "photo": "app/data/images/toby.jpg",
+        "photo": "../images/toby.jpg",
         "scores": [
             1,
             5,
@@ -50,7 +50,7 @@ var mates = [
     },
     {
         "name": "Stanley Hudson",
-        "photo": "app/data/images/stanley.png",
+        "photo": "../images/stanley.png",
         "scores": [
             5,
             5,
@@ -66,7 +66,7 @@ var mates = [
     },
     {
         "name": "Ryan Howard",
-        "photo": "app/data/images/ryan.jpg",
+        "photo": "../images/ryan.jpg",
         "scores": [
             5,
             1,
@@ -82,7 +82,7 @@ var mates = [
     },
     {
         "name": "Phyllis Vance",
-        "photo": "app/data/images/phyllis.jpg",
+        "photo": "../images/phyllis.jpg",
         "scores": [
             1,
             5,
@@ -98,7 +98,7 @@ var mates = [
     },
     {
         "name": "Oscar Martinez",
-        "photo": "app/data/images/oscar.jpeg",
+        "photo": "../images/oscar.jpeg",
         "scores": [
             3,
             5,
@@ -114,7 +114,7 @@ var mates = [
     },
     {
         "name": "Michael Scott",
-        "photo": "app/data/images/michael.jpg",
+        "photo": "../images/michael.jpg",
         "scores": [
             5,
             1,
@@ -130,7 +130,7 @@ var mates = [
     },
     {
         "name": "Kevin Malone",
-        "photo": "app/data/images/kevin.jpg",
+        "photo": "../images/kevin.jpg",
         "scores": [
             4,
             1,
@@ -146,7 +146,7 @@ var mates = [
     },
     {
         "name": "Kelly Kapoor",
-        "photo": "app/data/images/kelly.jpg",
+        "photo": "../images/kelly.jpg",
         "scores": [
             3,
             1,
@@ -162,7 +162,7 @@ var mates = [
     },
     {
         "name": "Jim Halpert",
-        "photo": "app/data/images/jim.jpeg",
+        "photo": "../images/jim.jpeg",
         "scores": [
             5,
             3,
@@ -178,7 +178,7 @@ var mates = [
     },
     {
         "name": "Dwight Schrute",
-        "photo": "app/data/images/dwight.jpeg",
+        "photo": "../images/dwight.jpeg",
         "scores": [
             5,
             1,
@@ -194,7 +194,7 @@ var mates = [
     },
     {
         "name": "Darryl Philbin",
-        "photo": "app/data/images/darryl.jpg",
+        "photo": "../images/darryl.jpg",
         "scores": [
             3,
             5,
@@ -210,7 +210,7 @@ var mates = [
     },
     {
         "name": "Andy Bernard",
-        "photo": "app/data/images/andy.jpg",
+        "photo": "../images/andy.jpg",
         "scores": [
             4,
             4,
