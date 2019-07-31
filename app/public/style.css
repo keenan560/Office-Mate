@@ -80,19 +80,4 @@ button:hover {
     background-size: 100%;
 
 }
-/* 
-.tps {
-    background-image: url(./images/action.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
 
-/* select {
-    background-color: palegoldenrod !important;
-} */
-
-.img-thumbnail {
-    width: 200px;
-    height: 200px;
-}
