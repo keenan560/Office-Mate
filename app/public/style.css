@@ -81,6 +81,8 @@ button:hover {
 
 }
 
+/* Media queries */
+
 @media only screen and (max-width: 600px) {
     body{
         background-image: url() !important;
@@ -118,4 +120,27 @@ button:hover {
         background-color: green !important;
         color: white !important;
     }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        background-image: url(./images/dunder.jpg) !important;
+        background-color: rgb(72, 72, 72);
+        background-repeat:no-repeat!important;
+        background-size: 100%!important;
+        background-position: center;
+    }
+
+    #begin {
+        float: none !important;
+        /* width: 100% !important; */
+        border: solid thin !important;
+
+    }
+    
+    #begin:hover {
+        background-color: green !important;
+        color: white !important;
+    }
+
 }
