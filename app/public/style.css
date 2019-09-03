@@ -29,6 +29,13 @@
 
 
 }
+.card {
+    border: thick solid white
+}
+
+.card-body {
+    background-image: url(../public/images/yellow.jpg)
+}
 
 #which {
     background-image: url(./images/yellow.jpg);

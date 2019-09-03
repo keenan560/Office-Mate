@@ -226,4 +226,7 @@ var mates = [
     }
 ]
 
-module.exports = mates
+
+
+module.exports = mates;
+

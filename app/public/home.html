@@ -9,19 +9,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="./style.css" type="text/css"/>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
     <title>officeMate</title>
 </head>
  
+
 <body class="homepage">
     <div class="container">
         <h1 class="display-1 p-3 my-3 text-center mx-auto animated bounceInDown slow">officeMate</h1>
         <br>
-        <p id ='which'class="my-3 mx-autop-2 p-1 text-center animated fadeInLeft my-3 slow">Which Office character are YOU?</p>
+        <p id='which' class="my-3 mx-autop-2 p-1 text-center animated fadeInLeft my-3 slow">Which Office character are
+            YOU?</p>
         <br>
         <a href="/survey">
-            <button  id='begin'class="btn btn-lg my-3 mx-auto text-white bg-primary animated fadeInRight slow">Begin Survey</button>
+            <button id='begin' class="btn btn-lg my-3 mx-auto text-white bg-primary animated fadeInRight slow">Begin
+                Survey</button>
         </a>
+        <br>
+        <div class="row mx-3 my-auto" id='roster'>
+
+        </div>
+
+        <br>
+        <a href="/survey">
+            <button id='begin' class="btn btn-lg my-3 mx-auto text-white bg-primary animated fadeInRight slow">Begin
+                Survey</button>
+        </a>
+
     </div>
 
 
@@ -38,10 +52,249 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <!-- Code for home page -->
+    <script text="text/javascript">
+        console.log("here")
+        var mates = [
+            {
+                "name": "Pam Beesly",
+                "photo": "./images/pam.jpeg",
+                "scores": [
+                    1,
+                    5,
+                    5,
+                    1,
+                    3,
+                    1,
+                    3,
+                    2,
+                    4,
+                    3
+                ]
+            },
+            {
+                "name": "Angela Martin",
+                "photo": "./images/angela.jpg",
+                "scores": [
+                    1,
+                    5,
+                    3,
+                    5,
+                    1,
+                    5,
+                    5,
+                    5,
+                    1,
+                    1
+                ]
+            },
+            {
+                "name": "Toby Flenderson",
+                "photo": "./images/toby.jpg",
+                "scores": [
+                    1,
+                    5,
+                    5,
+                    5,
+                    5,
+                    1,
+                    4,
+                    2,
+                    3,
+                    1
+                ]
+            },
+            {
+                "name": "Stanley Hudson",
+                "photo": "./images/stanley.png",
+                "scores": [
+                    5,
+                    5,
+                    3,
+                    5,
+                    1,
+                    4,
+                    5,
+                    1,
+                    3,
+                    2
+                ]
+            },
+            {
+                "name": "Ryan Howard",
+                "photo": "./images/ryan.jpg",
+                "scores": [
+                    5,
+                    1,
+                    3,
+                    1,
+                    4,
+                    3,
+                    2,
+                    1,
+                    4,
+                    5
+                ]
+            },
+            {
+                "name": "Phyllis Vance",
+                "photo": "./images/phyllis.jpg",
+                "scores": [
+                    1,
+                    5,
+                    5,
+                    1,
+                    5,
+                    2,
+                    4,
+                    5,
+                    3,
+                    2
+                ]
+            },
+            {
+                "name": "Oscar Martinez",
+                "photo": "./images/oscar.jpeg",
+                "scores": [
+                    3,
+                    5,
+                    3,
+                    4,
+                    3,
+                    1,
+                    4,
+                    5,
+                    3,
+                    2
+                ]
+            },
+            {
+                "name": "Michael Scott",
+                "photo": "./images/michael.jpg",
+                "scores": [
+                    5,
+                    1,
+                    1,
+                    1,
+                    4,
+                    5,
+                    1,
+                    1,
+                    3,
+                    5
+                ]
+            },
+            {
+                "name": "Kevin Malone",
+                "photo": "./images/kevin.jpg",
+                "scores": [
+                    4,
+                    1,
+                    5,
+                    3,
+                    4,
+                    5,
+                    2,
+                    2,
+                    4,
+                    2
+                ]
+            },
+            {
+                "name": "Kelly Kapoor",
+                "photo": "./images/kelly.jpg",
+                "scores": [
+                    3,
+                    1,
+                    2,
+                    3,
+                    2,
+                    4,
+                    4,
+                    2,
+                    4,
+                    5
+                ]
+            },
+            {
+                "name": "Jim Halpert",
+                "photo": "./images/jim.jpeg",
+                "scores": [
+                    5,
+                    3,
+                    5,
+                    1,
+                    4,
+                    1,
+                    3,
+                    1,
+                    4,
+                    2
+                ]
+            },
+            {
+                "name": "Dwight Schrute",
+                "photo": "./images/dwight.jpeg",
+                "scores": [
+                    5,
+                    1,
+                    2,
+                    1,
+                    1,
+                    5,
+                    5,
+                    4,
+                    1,
+                    2
+                ]
+            },
+            {
+                "name": "Darryl Philbin",
+                "photo": "./images/darryl.jpg",
+                "scores": [
+                    3,
+                    5,
+                    5,
+                    3,
+                    5,
+                    2,
+                    4,
+                    4,
+                    3,
+                    2
+                ]
+            },
+            {
+                "name": "Andy Bernard",
+                "photo": "./images/andy.jpg",
+                "scores": [
+                    4,
+                    4,
+                    1,
+                    3,
+                    1,
+                    3,
+                    2,
+                    3,
+                    4,
+                    5
+                ]
+            }
+        ]
 
+        $(document).ready(() => {
+            mates.forEach(element => {
+                $("#roster").append(`<div class="card animated slideInUp slower mx-1 my-1" style="width: 18rem;">
+                    <img src="${element.photo}" class="card-img-top" alt="${element.name}">
+                    <div class="card-body">
+                        <p class="card-text text-center">${element.name}</p>
+                    </div>
+                    </div>`);
+            })
+        })
+    </script>
 </body>
 
 </html>
