@@ -34,7 +34,7 @@
 }
 
 .card-body {
-    background-image: url(../public/images/yellow.jpg)
+    background-image: url(./images/yellow.jpg) !important
 }
 
 #which {
