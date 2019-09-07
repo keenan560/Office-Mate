@@ -1,7 +1,7 @@
 
 var mates = [
     {
-        "name": "Pam Beesly",
+        "name": 'Pam Beesly',
         "photo": "../images/pam.jpeg",
         "scores": [
             1,
@@ -17,7 +17,7 @@ var mates = [
         ]
     },
     {
-        "name": "Angela Martin",
+        "name": 'Angela Martin',
         "photo": "../images/angela.jpg",
         "scores": [
             1,
@@ -33,7 +33,7 @@ var mates = [
         ]
     },
     {
-        "name": "Toby Flenderson",
+        "name": 'Toby Flenderson',
         "photo": "../images/toby.jpg",
         "scores": [
             1,
@@ -49,7 +49,7 @@ var mates = [
         ]
     },
     {
-        "name": "Stanley Hudson",
+        "name": 'Stanley Hudson',
         "photo": "../images/stanley.png",
         "scores": [
             5,
@@ -81,7 +81,7 @@ var mates = [
         ]
     },
     {
-        "name": "Phyllis Vance",
+        "name": 'Phyllis Vance',
         "photo": "../images/phyllis.jpg",
         "scores": [
             1,
@@ -97,7 +97,7 @@ var mates = [
         ]
     },
     {
-        "name": "Oscar Martinez",
+        "name": 'Oscar Martinez',
         "photo": "../images/oscar.jpeg",
         "scores": [
             3,
@@ -113,7 +113,7 @@ var mates = [
         ]
     },
     {
-        "name": "Michael Scott",
+        "name": 'Michael Scott',
         "photo": "../images/michael.jpg",
         "scores": [
             5,
@@ -129,7 +129,7 @@ var mates = [
         ]
     },
     {
-        "name": "Kevin Malone",
+        "name": 'Kevin Malone',
         "photo": "../images/kevin.jpg",
         "scores": [
             4,
@@ -145,7 +145,7 @@ var mates = [
         ]
     },
     {
-        "name": "Kelly Kapoor",
+        "name": 'Kelly Kapoor',
         "photo": "../images/kelly.jpg",
         "scores": [
             3,
@@ -161,7 +161,7 @@ var mates = [
         ]
     },
     {
-        "name": "Jim Halpert",
+        "name": 'Jim Halpert',
         "photo": "../images/jim.jpeg",
         "scores": [
             5,
@@ -177,7 +177,7 @@ var mates = [
         ]
     },
     {
-        "name": "Dwight Schrute",
+        "name": 'Dwight Schrute',
         "photo": "../images/dwight.jpeg",
         "scores": [
             5,
@@ -193,7 +193,7 @@ var mates = [
         ]
     },
     {
-        "name": "Darryl Philbin",
+        "name": 'Darryl Philbin',
         "photo": "../images/darryl.jpg",
         "scores": [
             3,
@@ -209,7 +209,7 @@ var mates = [
         ]
     },
     {
-        "name": "Andy Bernard",
+        "name": 'Andy Bernard',
         "photo": "../images/andy.jpg",
         "scores": [
             4,
